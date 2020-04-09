@@ -23,7 +23,7 @@ class Spider:
         self.browser = webdriver.Chrome(chrome_options=self.chrome_options)
         self.mainUrl = "https://military.china.com/weapon/aircraft/zdj/130002600/20190724/10427.html"
         self.url_list = []
-        self.fout = open("arsenal.csv", "w", newline='', encoding="utf_8_sig")
+        self.fout = open("./data/arsenal.csv", "w", newline='', encoding="utf_8_sig")
 
     def get_html(self, html):
         """启动浏览器，获取网页源代码"""
